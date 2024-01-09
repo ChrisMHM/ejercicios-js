@@ -41,7 +41,7 @@ function cuadradoNumero(numero) {
     return numero * numero;
 }
 
-const cuadradoNumeroFlecha = (numero) => numero * numero;
+const cuadradoNumeroFlecha = numero => numero * numero;
 const numero = 9;
 
 console.log(`El cuadrado del número ${numero} es ${cuadradoNumero(numero)}`);
@@ -52,11 +52,11 @@ function celciusAFarenheit(celcius) {
     return celcius * 1.8 + 32;
 }
 
-const celciusAFarenheitFlecha = (celcius) => celcius * 1.8 + 32;
+const celciusAFarenheitFlecha = celcius => celcius * 1.8 + 32;
 const celcius = 25;
 
-console.log(`La conversión de celsius a farenheit de ${celcius} es ${celciusAFarenheit(celcius)}`);
-console.log(`La conversión de celsius a farenheit de ${celcius} es ${celciusAFarenheitFlecha(celcius)}`);
+console.log(`La conversión de celsius a farenheit de ${celcius}°C es ${celciusAFarenheit(celcius)}`);
+console.log(`La conversión de celsius a farenheit de ${celcius}°C es ${celciusAFarenheitFlecha(celcius)}`);
 
 // calcular el valor del voltaje dadas la resistencia y la corriente
 function calcularVoltaje(resistencia, corriente) {
@@ -69,3 +69,14 @@ const corriente = 0.5;
 
 console.log(`La corriente calculada con la resistencia ${resistencia} ohms y la corriente ${corriente} ampers es ${calcularVoltaje(resistencia, corriente)}`);
 console.log(`La corriente calculada con la resistencia ${resistencia} ohms y la corriente ${corriente} ampers es ${calcularVoltajeFlecha(resistencia, corriente)}`);
+
+// calcular el volumen de una esfera
+function volumenEsfera(radio) {
+    return 4 / 3 * Math.PI * Math.pow(radio, 3);
+}
+
+const volumenEsferaFlecha = radio => 4 / 3 * Math.PI * Math.pow(radio, 3);
+const radio = 6;
+
+console.log(`El volumen de una esfera de radio ${radio} es ${volumenEsfera(radio)}`);
+console.log(`El volumen de una esfera de radio ${radio} es ${volumenEsferaFlecha(radio)}`);
