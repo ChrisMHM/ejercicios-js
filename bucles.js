@@ -64,34 +64,18 @@ console.log(numDiv(3.5));
 // "Esperanza" = ['E', 's', 'p', 'e', ...]
 
 const secretName = members => {
-    let societyCapitals = [];  // Aquí almaceno las primeras letras de cada palabra
-    let society = "";   // Formar la palabra final
+    let societyCapitals = [];
+    let society = "";
 
-    // members.forEach(member => {
-    //     societyCapitals.push(member[0]);
-    // });
-
-    // Paso 1. Recuperar la primera letra y guardar en el arreglo temporal
-    for (let index = 0; index < members.length; index++) {
-        const member = members[index];
+    members.forEach(member => {
         societyCapitals.push(member[0]);
-    }
+    });
 
-    // societyCapitals = ['E', 'F', 'N'];
-    // 4, 2, 8, 2 -> 2, 2, 4, 8
-    // Paso 2. Ordenar el arreglo temporal
-    societyCapitals.sort();  // Ordenamiento
+    societyCapitals.sort();
 
-    // societyCapitals.forEach(letter => {
-    //     society += letter;
-    // });
-
-    // Paso 3. Formar el String final
-    for (let index = 0; index < societyCapitals.length; index++) {
-        society = society + societyCapitals[index];
-    }
-
-    // EFN
+    societyCapitals.forEach(letter => {
+        society += letter;
+    });
 
     return society;
 }
