@@ -21,9 +21,9 @@ const sumResistances = resistanceValues => {
     return sum;
 };
 
-console.log(sumResistances([-1, 5, 6, 3]));
-console.log(sumResistances([14, 3.5, 6]));
-console.log(sumResistances([8, 15, 100]));
+console.log(sumResistances([-1, 5, 6, 3]) + " ohms");
+console.log(sumResistances([14, 3.5, 6]) + " ohms");
+console.log(sumResistances([8, 15, 100]) + " ohms");
 
 // Number divided into halves
 
@@ -150,4 +150,63 @@ console.log(onlineStatus(['mockIng99', 'J0eyPunch', 'glassedFer', 'ozonemotion']
 // - `arrayMultiplos(2, 10)` should return `[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]`.
 // - `arrayMultiplos(17, 6)` should return `[17, 34, 51, 68, 85, 102]`.
 
+
+const arrayMultiplos = (number, length) => {
+    const array = [];
+    const value = number;
+
+    for (let index = 0; index < length; index++) {
+        array.push(number);
+        number += value;
+    }
+
+    return array;
+}
+
+console.log(arrayMultiplos(2, 10));
+console.log(arrayMultiplos(17, 6));
+
+// Positive dominance in Array
+
+// Write a function to determine if an array is positively dominant.
+// An array is positively dominant when the majority of its elements are positive.
+
+//     Example:
+// - `positiveDom([-1, -3, -5, 4, 6767])` should return `false`.
+
+const positiveDom = values => {
+    let positive = 0;
+    let negative = 0;
+    let balance = 0;
+
+    values.forEach(value => {
+        if (value >= 0) {
+            positive++;
+        } else {
+            negative--;
+        }
+    });
+
+    console.log(positive);
+    console.log(negative);
+    balance = positive + negative;
+
+    if (balance > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(positiveDom([-1, -3, -5, 4, 6767]));
+
+// Antipodal Average
+
+// Given an array, return a shorter array following these steps:
+// - Split the array into two equal parts *.If unequal, remove the middle element to obtain two equal arrays.
+// - Sum each number of the first part with the inverse numbers of the second part.
+// - Divide each number of the resulting array by 2.
+
+// Example:
+// - For the array`[1,2,3,5,22,6]`, the result should be`[3.5, 12, 4]`.
 
