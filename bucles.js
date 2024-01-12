@@ -187,10 +187,18 @@ console.log(positiveDom([-1, -3, -5, 4, 6767]));
 
 // Example:
 // - For the array`[1,2,3,5,22,6]`, the result should be`[3.5, 12, 4]`.
+// [1, 2, 3, 22, 6, 7]
+// 0, 1, 2, 3, 4, 5
+// i -> 0, 1, 2, 3, 4, 5
+// j -> 5, 4, 3, 2, 1, 0
+// i < j x
+
 const antipodalAvg = array => {
     const arrayReturn = [];
 
+    // Java, JS, C/C++, C#
     for (let i = 0, j = array.length - 1; i < j; i++, j--) {
+        // Contenido
         const operation = (array[i] + array[j]) / 2;
         arrayReturn.push(operation);
     }
