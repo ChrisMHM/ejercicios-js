@@ -159,27 +159,21 @@ console.log(arrayMultiplos(17, 6));
 // - `positiveDom([-1, -3, -5, 4, 6767])` should return `false`.
 
 const positiveDom = values => {
-    let positive = 0;
-    let negative = 0;
-    let balance = 0;
+    // let positive = 0;
+    // let negative = 0;
 
-    values.forEach(value => {
-        if (value >= 0) {
-            positive++;
-        } else {
-            negative--;
-        }
-    });
+    // values.forEach(value => {
+    //     if (value >= 0) {
+    //         positive++;
+    //     } else {
+    //         negative--;
+    //     }
+    // });
 
-    console.log(positive);
-    console.log(negative);
-    balance = positive + negative;
+    const positive = values.filter(value => value > 0).length;
+    const negative = values.length - positive;
 
-    if (balance > 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return positive > Math.abs(negative);
 }
 
 console.log(positiveDom([-1, -3, -5, 4, 6767]));
@@ -193,4 +187,17 @@ console.log(positiveDom([-1, -3, -5, 4, 6767]));
 
 // Example:
 // - For the array`[1,2,3,5,22,6]`, the result should be`[3.5, 12, 4]`.
+const antipodalAvg = array => {
+    const arrayReturn = [];
 
+    for (let i = 0, j = array.length - 1; i < j; i++, j--) {
+        const operation = (array[i] + array[j]) / 2;
+        arrayReturn.push(operation);
+    }
+
+    return arrayReturn;
+};
+
+console.log(antipodalAvg([1, 2, 3, 5, 22, 6]));
+console.log(antipodalAvg([1, 2, 3, 5, 22, 6, 7]));
+console.log(antipodalAvg([1, 2, 3, 5, 22, 6, -1, 0]));
