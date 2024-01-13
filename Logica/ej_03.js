@@ -3,9 +3,6 @@
 
 // Result example: "Time for bed after 10 seconds".
 
-const time = parseInt(prompt('Set your alarm. How much time?'));
-const milisec = time * 1000;
-
 const mensaje = (time) => {
     const msgDiv = document.querySelector("#msg");
     const msg = `Time for bed after ${time} seconds.`
@@ -13,4 +10,10 @@ const mensaje = (time) => {
     console.log(msg);
 }
 
-setTimeout(() => mensaje(time), milisec);
+const main = () => {
+    const time = parseInt(prompt('Set your alarm. How much time?'));
+    const milisec = time * 1000;
+    setTimeout(() => mensaje(time), milisec);
+};
+
+main();

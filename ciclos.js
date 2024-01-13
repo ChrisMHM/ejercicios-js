@@ -20,12 +20,24 @@
 //     console.log(count += 1);
 // }
 
-function factorial(numero) {
-    if (numero == 1) {
-        return 1;
-    } else {
-        return numero * factorial(numero - 1);
+// function factorial(numero) {
+//     if (numero == 1) {
+//         return numero;
+//     }
+//     return numero * factorial(numero - 1);
+// }
+
+const factorial = (num) => {
+    if (num == 1) {
+        return num;
     }
+    return num * factorial(num - 1);
 }
 
-console.log(factorial(8));
+// const factorial = numero => {
+//     for (let index = 1; index < numero; index++) {
+//         const element = array[index];
+//     }
+// };
+
+console.log(factorial(4));
