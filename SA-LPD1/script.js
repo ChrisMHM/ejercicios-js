@@ -60,15 +60,11 @@ const mensaje = (mayor, menor, centro) => {
     mensaje += `${mayor}, ${centro}, ${menor}\n`;
     mensaje += `${menor}, ${centro}, ${mayor}`;
 
-
     return mensaje;
 };
 
 const mostrarMensaje = (mensaje) => {
-    const msgDiv = document.querySelector("#msg");
-    let finalMsg = `${mensaje}`;
-    console.log(finalMsg);
-    msgDiv.innerHTML = finalMsg;
+    console.log(mensaje);
 };
 
 const main = () => {
