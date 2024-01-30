@@ -63,8 +63,13 @@ const mensaje = (mayor, menor, centro) => {
     return mensaje;
 };
 
-const mostrarMensaje = (mensaje) => {
-    console.log(mensaje);
+const mostrarMensaje = (mensajes) => {
+    console.log(mensajes);
+    let contenido = '';
+    mensajes.split('\n').forEach(mensaje => {
+        contenido += `<p>${mensaje}</p>`;
+    });
+    document.getElementById('msg').innerHTML = contenido;
 };
 
 const main = () => {
