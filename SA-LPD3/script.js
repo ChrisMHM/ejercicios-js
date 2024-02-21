@@ -22,18 +22,13 @@ const solicitarNumero = () => {
 };
 
 const calcularFactorial = (numero) => {
-    let factorial = 1;
-
     if (numero === 0) {
         return 1;
+    } else {
+        return numero * calcularFactorial(numero - 1);
     }
-
-    for (let i = 1; i <= numero; i++) {
-        factorial *= i;
-    }
-
-    return factorial;
 }
+
 
 const mensaje = (numero, factorial) => {
     return `El factorial de ${numero} es ${factorial}`;
