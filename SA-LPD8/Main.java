@@ -11,9 +11,7 @@ public class Main {
             System.out.print("Ingresa el numero " + (k + 1) + ": ");
             int input = Integer.valueOf(sc.nextLine());
             numerosIngresados[k] = input;
-            boolean resultado = esPrimo(input);
-            System.out.println(resultado);
-            if (resultado) {
+            if (esPrimo(input)) {
                 numerosOrdenados[i] = input;
                 i++;
             } else {
