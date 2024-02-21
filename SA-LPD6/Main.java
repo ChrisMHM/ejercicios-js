@@ -6,7 +6,6 @@ public class Main {
         System.out.println(".:: Ingresa un texto ::.");
         String input = sc.nextLine();
         String inputInvertido = "";
-
         for (int i = input.length() - 1; i >= 0; i--) {
             inputInvertido += input.charAt(i);
         }
