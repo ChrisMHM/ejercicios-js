@@ -20,6 +20,9 @@
 # BlueJ files
 *.ctxt
 
+# Drawio files
+*.drawio
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
