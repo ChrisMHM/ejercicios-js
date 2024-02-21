@@ -1,0 +1,94 @@
+<mxfile host="Electron" modified="2024-02-21T08:51:42.646Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="4DXU74iVrQe939dYD4XJ" version="23.0.2" type="device">
+  <diagram name="Página-1" id="Ndw_DA0dihI_gI0STr87">
+    <mxGraphModel dx="3129" dy="1349" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-2" target="dCt8uvqbB9GR7HFRqUyf-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426.5" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-2" value="Inicio" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380.49" y="10" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-4" target="dCt8uvqbB9GR7HFRqUyf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-4" value="diccionario&amp;lt;String, String&amp;gt;: HashMap&lt;br&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;fontSize=16;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="302.07" y="140" width="246.84" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-6" target="dCt8uvqbB9GR7HFRqUyf-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426.5" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-6" value="diccionario = cargarPalabras()" style="whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300.49" y="320" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-9" value="Fin" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="734" y="900" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-10" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-12" target="dCt8uvqbB9GR7HFRqUyf-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426.5" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-11" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-44" target="dCt8uvqbB9GR7HFRqUyf-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="845.8749999999995" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-12" value="true" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300.49" y="475" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-14" target="dCt8uvqbB9GR7HFRqUyf-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-14" value="palabra = input(&quot;Ingresa palabra&quot;)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.1111111111111111;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="333.61" y="630" width="183.76" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-37" value="Sí" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-39" target="dCt8uvqbB9GR7HFRqUyf-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="202.51" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-38" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-39" target="dCt8uvqbB9GR7HFRqUyf-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425.52941176470586" y="1029.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-39" value="diccionario.containsKey(palabra)" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300.49" y="890" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4" y="930" as="targetPoint" />
+            <mxPoint x="-26" y="930" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-47" target="dCt8uvqbB9GR7HFRqUyf-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4" y="1095" />
+              <mxPoint x="4" y="515" />
+            </Array>
+            <mxPoint x="309.75" y="1060" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-46" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dCt8uvqbB9GR7HFRqUyf-44" target="dCt8uvqbB9GR7HFRqUyf-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-44" value="palabra == &quot;Salir&quot;" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300.49" y="770" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-47" value="diccionario.get(palabra)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.1111111111111111;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="332.12" y="1050" width="183.76" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dCt8uvqbB9GR7HFRqUyf-48" value="&quot;No existe palabra&quot;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.1111111111111111;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50.77999999999997" y="885" width="183.76" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
